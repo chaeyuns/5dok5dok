@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    min-width: 1450px;
+    font-family: 'GmarketSans';
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #494949;
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 20%;
+    background-color: rgba(255, 234, 117, 0.8);
+    border-radius: 10px;
+}
+
+/*header*/
+header {
+    background: #ffea75;
+    height: 111px;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo ul {
+    display: flex;
+}
+
+.logo ul li {
+    padding-left: 15px;
+}
+
+#gnb {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5c4333;
+}
+
+#gnb>li {
+    padding: 0 55px;
+    position: relative;
+}
+
+#gnb>li:hover {
+    font-weight: bold;
+}
+
+.sub>li:hover {
+    font-weight: bold;
+}
+
+.sub {
+    font-weight: 500;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: #5c4333;
+    display: none;
+}
+
+.sub>li {
+    padding-bottom: 10px;
+}
+
+#gnb>.sub_bg {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 160px;
+    width: 130%;
+    background-color: #ffea75;
+    border-radius: 0 0 50px 50px;
+    display: none;
+}
+
+/*menu_banner*/
+.menu_banner {
+    height: 365px;
+    background: #eee3c8;
+}
+
+.menu_banner_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu_banner h1 {
+    font-size: 65px;
+    color: #5c4333;
+    padding-top: 164px;
+    padding-bottom: 60px;
+}
+
+/*클릭한 버튼에 들어갈 스타일은 active라는 클래스를 활용한다.*/
+.active {
+    box-sizing: border-box;
+    background-color: #ff7b22;
+    width: 25%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.tab_btn>div span {
+    position: relative;
+    z-index: 10;
+}
+
+.tab_btn {
+    position: relative;
+    width: 837px;
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid #ff7b22;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c4333;
+    margin: 0 auto;
+    background-color: #fcf9f1;
+}
+
+.tab_btn>div {
+    width: 33.33%;
+    text-align: center;
+    padding: 15px 0 5px 0;
+    cursor: pointer;
+}
+
+/*menu*/
+.menu_banner {
+    background: url(../images/menu_banner1.gif);
+}
+
+.tab_container {
+    background-color: #fffae5;
+    padding: 60px;
+}
+
+.menu_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.menu_inner ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.menu_inner ul li {
+    margin: 0 30px 120px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.menu_hover {
+    position: relative;
+    border: 1px solid #c9c1a1;
+    border-radius: 70px;
+    width: 259px;
+    height: 246px;
+}
+
+.menu_inner ul li p {
+    color: #5c4333;
+    font-size: 20px;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.menu_inner ul li>img {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.menu_hover>p {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    opacity: 0;
+}
+
+.coffee_hover>img,
+.dessert_hover>img {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.non_coffee_hover>img {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu_inner ul li:hover .menu_hover>p {
+    opacity: 1;
+    top: 50px;
+    font-weight: bold;
+}
+
+#coffee ul li:hover .menu_hover>img {
+    transition: all 0.5s;
+    bottom: -20px;
+}
+
+#dessert ul li:hover .menu_hover>img {
+    transition: all 0.5s;
+    bottom: -10px;
+}
+
+#non_coffee ul li:hover .menu_hover>img {
+    transition: all 0.5s;
+    bottom: -60px;
+}
+
+.menu_hover {
+    overflow: hidden;
+}
+
+.menu_inner ul li:nth-child(1):hover .coffee_hover>p {
+    color: #3f1e03;
+}
+
+#coffee ul li:nth-child(1):hover {
+    background-color: #896a4f;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(2):hover .coffee_hover>p {
+    color: #360c04;
+}
+
+#coffee ul li:nth-child(2):hover {
+    background-color: #aa7c41;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(3):hover .coffee_hover>p {
+    color: #c66e00;
+}
+
+#coffee ul li:nth-child(3):hover {
+    background-color: #f6d1a9;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(4):hover .coffee_hover>p {
+    color: #411309;
+}
+
+#coffee ul li:nth-child(4):hover {
+    background-color: #f7d18f;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(5):hover .coffee_hover>p {
+    color: #66301c;
+}
+
+#coffee ul li:nth-child(5):hover {
+    background-color: #e3cdaa;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(6):hover .coffee_hover>p {
+    color: #8d4500;
+}
+
+#coffee ul li:nth-child(6):hover {
+    background-color: #d5ab5f;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(1):hover .non_coffee_hover>p {
+    color: #592d18;
+}
+
+#non_coffee ul li:nth-child(1):hover {
+    background-color: #986d4e;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(2):hover .non_coffee_hover>p {
+    color: #f3db5c;
+}
+
+#non_coffee ul li:nth-child(2):hover {
+    background-color: #faf3d4;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(3):hover .non_coffee_hover>p {
+    color: #f7c47a;
+}
+
+#non_coffee ul li:nth-child(3):hover {
+    background-color: #fdf2d3;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(4):hover .non_coffee_hover>p {
+    color: #fb3400;
+}
+
+#non_coffee ul li:nth-child(4):hover {
+    background-color: #f29f8e;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(5):hover .non_coffee_hover>p {
+    color: #81a70a;
+}
+
+#non_coffee ul li:nth-child(5):hover {
+    background-color: #f7d141;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(1):hover .dessert_hover>p {
+    color: #fad292;
+}
+
+#dessert ul li:nth-child(1):hover {
+    background-color: #a74a3e;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(2):hover .dessert_hover>p {
+    color: #dad37f;
+}
+
+#dessert ul li:nth-child(2):hover {
+    background-color: #a79848;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(3):hover .dessert_hover>p {
+    color: #64240a;
+}
+
+#dessert ul li:nth-child(3):hover {
+    background-color: #f9cf8f;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(4):hover .dessert_hover>p {
+    color: #4e2105;
+}
+
+#dessert ul li:nth-child(4):hover {
+    background-color: #a5744b;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(5):hover .dessert_hover>p {
+    color: #442913;
+}
+
+#dessert ul li:nth-child(5):hover {
+    background-color: #e6ab58;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(6):hover .dessert_hover>p {
+    color: #2f1c1b;
+}
+
+#dessert ul li:nth-child(6):hover {
+    background-color: #74432a;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(7):hover .dessert_hover>p {
+    color: #f4f3ef;
+}
+
+#dessert ul li:nth-child(7):hover {
+    background-color: #e5a75a;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(8):hover .dessert_hover>p {
+    color: #9f5a32;
+}
+
+#dessert ul li:nth-child(8):hover {
+    background-color: #ddb856;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+.menu_inner ul li:nth-child(9):hover .dessert_hover>p {
+    color: #463027;
+}
+
+#dessert ul li:nth-child(9):hover {
+    background-color: #9f7d65;
+    border-radius: 70px;
+    width: 261px;
+    height: 248px;
+}
+
+/*footer*/
+footer {
+    background: url(../images/footer_bg_sub.jpg) center top;
+    height: 309px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    padding-top: 150px;
+}
+
+.footer_text {
+    padding-left: 130px;
+}
+
+.sns {
+    display: flex;
+    padding-left: 500px;
+    align-items: center;
+}
+
+.sns li {
+    padding-left: 35px;
+}

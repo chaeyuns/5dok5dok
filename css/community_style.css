@@ -1,0 +1,391 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    min-width: 1450px;
+    font-family: 'GmarketSans';
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #494949;
+}
+
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 20%;
+    background-color: rgba(255, 234, 117, 0.8);
+    border-radius: 10px;
+}
+
+/*header*/
+header {
+    background: #ffea75;
+    height: 111px;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo ul {
+    display: flex;
+}
+
+.logo ul li {
+    padding-left: 15px;
+}
+
+#gnb {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5c4333;
+}
+
+#gnb>li {
+    padding: 0 55px;
+    position: relative;
+}
+
+#gnb>li:hover {
+    font-weight: bold;
+}
+
+.sub>li:hover {
+    font-weight: bold;
+}
+
+.sub {
+    font-weight: 500;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: #5c4333;
+    display: none;
+}
+
+.sub>li {
+    padding-bottom: 10px;
+}
+
+#gnb>.sub_bg {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 160px;
+    width: 130%;
+    background-color: #ffea75;
+    border-radius: 0 0 50px 50px;
+    display: none;
+}
+
+/*community_banner*/
+.community_banner {
+    height: 365px;
+    background: url(../images/community_banner.gif);
+}
+
+.community_banner_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.community_banner_inner h1 {
+    font-size: 65px;
+    color: #5c4333;
+    padding-top: 164px;
+    padding-bottom: 60px;
+}
+
+/*클릭한 버튼에 들어갈 스타일은 active라는 클래스를 활용한다.*/
+.active {
+    box-sizing: border-box;
+    background-color: #ff7b22;
+    width: 25%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.tab_btn>div span {
+    position: relative;
+    z-index: 10;
+}
+
+.tab_btn {
+    position: relative;
+    width: 837px;
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid #ff7b22;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c4333;
+    margin: 0 auto;
+    background-color: #fcf9f1;
+}
+
+.tab_btn>div {
+    width: 33.33%;
+    text-align: center;
+    padding: 15px 0 5px 0;
+    cursor: pointer;
+}
+
+/*menu*/
+.tab_container {
+    background-color: #fffae5;
+}
+
+#event {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 140px 115px;
+}
+
+#event ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#event ul li {
+    width: 500px;
+    height: 500px;
+    border-radius: 90px;
+    overflow: hidden;
+    margin: 20px 50px;
+}
+
+#event ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+#qna {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+/*제목부분*/
+
+#qna ul li {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.question {
+    overflow: hidden;
+    padding: 20px 10px 10px 10px;
+    border-bottom: 1px solid #5c4333;
+}
+
+.question_in {
+    float: left;
+}
+
+.plus {
+    float: right;
+    margin-right: 10px;
+}
+
+.answer {
+    padding: 20px 30px 10px 30px;
+    background: #fff7d1;
+    display: none;
+}
+
+
+/*+모양 회전관련 속성. 요부분은 반드시 복사해서 가져가세요~*/
+.turn .question img {
+    transform: rotate(45deg);
+}
+
+.plus img {
+    transition: transform 0.5s;
+}
+
+#letter {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#letter img {
+    width: 1000px;
+}
+
+.btn-bubble {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    line-height: 41px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 39px !important;
+    background: transparent;
+    font-size: 20px;
+    -webkit-transition: color 0.45s;
+    transition: color 0.45s;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #000;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+.btn-bubble .btn-bubble-inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-bubble .btn-bubble-itembox {
+    position: relative;
+    display: block;
+    height: 100%;
+    -webkit-filter: url(#bubble-start);
+    filter: url(#bubble-start);
+}
+
+
+
+
+@supports ((-webkit-filter: url("#bubble-start")) or (filter: url("#bubble-start"))) .btn-bubble .btn-bubble-item {
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.4);
+    transform: translate3d(0, 150%, 0) scale(1.4);
+}
+
+.btn-bubble .btn-bubble-item {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: #000;
+    border-radius: 100%;
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    -webkit-transition: -webkit-transform 0.45s;
+    transition: -webkit-transform 0.45s;
+    transition: transform 0.45s;
+    transition: transform 0.45s, -webkit-transform 0.45s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(1) {
+    left: 0%;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(2) {
+    left: 30%;
+    -webkit-transition-delay: 0.08s;
+    transition-delay: 0.08s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(3) {
+    left: 60%;
+    -webkit-transition-delay: 0.16s;
+    transition-delay: 0.16s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(4) {
+    left: 90%;
+    -webkit-transition-delay: 0.24s;
+    transition-delay: 0.24s;
+}
+
+.btn-bubble:hover {
+    color: #f8f2ec;
+}
+
+.btn-bubble:hover .btn-bubble-item {
+    transform: translateZ(0) scale(1.7);
+}
+
+/*footer*/
+footer {
+    background: url(../images/footer_bg_sub.jpg) center top;
+    height: 309px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    padding-top: 150px;
+}
+
+.footer_text {
+    padding-left: 130px;
+}
+
+.sns {
+    display: flex;
+    padding-left: 500px;
+    align-items: center;
+}
+
+.sns li {
+    padding-left: 35px;
+}

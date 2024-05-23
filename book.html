@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>오독오독</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/book_style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_inner">
+            <div class="logo">
+                <h2><a href="./index.html"><img src="./images/main_logo.png" alt="오독오독 메인로고"></a></h2>
+                <ul>
+                    <li><a href="#"><img src="./images/login.png" alt="로그인 이미지"></a></li>
+                    <li><a href="#"><img src="./images/join.png" alt="회원가입 이미지"></a></li>
+                </ul>
+            </div><!--logo-->
+            <ul id="gnb">
+                <li><a href="./about.html">브랜드</a>
+                    <ul class="sub">
+                        <li><a href="./about.html">오독오독 소개</a></li>
+                        <li><a href="./about.html#character">캐릭터 소개</a></li>
+                        <li><a href="./about.html#directions">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="./menu.html">메뉴</a>
+                    <ul class="sub">
+                        <li><a href="./menu.html">커피</a></li>
+                        <li><a href="./menu.html">논커피</a></li>
+                        <li><a href="./menu.html">디저트</a></li>
+                    </ul>
+                </li>
+                <li><a href="book.html">책</a>
+                    <ul class="sub">
+                        <li><a href="book.html#bestseller">베스트셀러</a></li>
+                        <li><a href="book.html#reading_list">추천도서</a></li>
+                        <li><a href="book.html#book_program">북 프로그램</a></li>
+                    </ul>
+                </li>
+                <li><a href="./community.html">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="./community.html">이벤트</a></li>
+                        <li><a href="./community.html">Q&A</a></li>
+                        <li><a href="./community.html">레터</a></li>
+                    </ul>
+                </li>
+                <li class="sub_bg"></li>
+            </ul><!--gnb-->
+        </div><!--header_inner-->
+
+        <div class="book_banner">
+            <h1>책</h1>
+        </div><!--book_banner-->
+
+        <div id="bestseller">
+            <div class="bestseller_inner">
+                <h2>월간 베스트</h2>
+                <p>매장에서 판매되는 상품의 지난 한 달간 가장 많이 판매된 순위입니다.</p>
+                <div class="book_hor">
+                    <div class="book1">
+                        <div class="book_img">
+                            <img src="./images/1st_book.jpg" alt="아주 희미한 빛으로도">
+                            <div class="book_ranking">
+                                <img src="./images/1st.png" alt="1위 이미지">
+                            </div><!--book_ranking-->
+                        </div><!--book_img-->
+                        <div class="book_text">
+                            <h3>아주 희미한 빛으로도</h3>
+                            <p>최은영 · 문학동네</p>
+                            <span>매장가 15,120원</span>
+                            <p>‘함께 성장해 나가는 우리 세대의 소설가’를 갖는 드문 경험을 선사하며<br>
+                                동료 작가와 평론가, 독자 모두에게<br>
+                                특별한 이름으로 자리매김한<br>
+                                최은영의 세 번째 소설집<br>
+                                『아주
+                                희미한 빛으로도』가 출간되었습니다.<br>
+                                책에 담긴 7편의 중단편은<br>
+                                조곤조곤 이야기를 시작하다가도<br>
+                                어느 순간 이야기의 부피를 키우면서<br>
+                                우리를 뜨거운 열기 한가운데로 이끄는 몰입력과 호소력이 돋보입니다. </p>
+                        </div><!--book_text-->
+                    </div><!--book1-->
+                    <div class="book_ver">
+                        <div class="book_reservation">
+                            <div class="book_img">
+                                <img src="./images/book_illust.png" alt="책 일러스트">
+                            </div><!--book_img-->
+                            <div class="book_text">
+                                <a href="#">매장 주문 예약하기</a>
+                            </div><!--book_text-->
+                        </div><!--book_reservation-->
+                        <div class="book3">
+                            <div class="book_img">
+                                <img src="./images/3nd_book.jpg" alt="마주">
+                                <div class="book_ranking">
+                                    <img src="./images/3nd.png" alt="3위 이미지">
+                                </div><!--book_ranking-->
+                            </div><!--book_img-->
+                            <div class="book_text">
+                                <h3>마주</h3>
+                                <p>최은미 · 창비</p>
+                                <span>매장가 15,120원</span>
+                                <p>코로나19가 확산되며<br>
+                                    모두를 불안에 떨게 했던<br>
+                                    2020년을 배경으로 한 소설은<br>
+                                    그 시기를 건너며<br>
+                                    우리가 잃어버린 마음들을<br>
+                                    보듬습니다.</p>
+                            </div><!--book_text-->
+                        </div><!--book3-->
+                    </div><!--book_ver-->
+                </div><!--book_hor-->
+                <div class="book2">
+                    <div class="book_img">
+                        <img src="./images/2nd_book.png" alt="사랑 파먹기">
+                        <div class="book_ranking">
+                            <img src="./images/2nd.png" alt="2위 이미지">
+                        </div><!--book_ranking-->
+                    </div><!--book_img-->
+                    <div class="book_text">
+                        <h3>사랑 파먹기</h3>
+                        <p>권혜영 · 민음사</p>
+                        <span>매장가 13,500원</span>
+                        <p>소설가 권혜영의 첫 소설집 『사랑 파먹기』가 민음사에서 출간되었습니다. 권혜영은 삶도 게임처럼 잠깐 멈추었다 재개할 수 있다는 사실을 보여 주겠다는 듯 일시정지한
+                            인물들의
+                            이야기를 선보입니다. 게임은 완전한 멈춤이 가능하지만 진짜 삶은 자비 없이, 마치 인물들의 비참한 상황을 비웃기라도 하는 것처럼 계속됩니다. 소설 속 인물들은 각자
+                            서 있는
+                            자리에서 어김없이 기묘한 일들에 휘말립니다.</p>
+                    </div><!--book_text-->
+                </div><!--book2-->
+            </div><!--bestseller_inner-->
+        </div><!--bestseller-->
+
+        <div id="reading_list">
+            <div class="reading_list_inner">
+                <h2>가을에 읽기 좋은 소설</h2>
+                <!-- Swiper -->
+                <div class="swiper reading_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/reading_list1.png" alt="변신 · 시골의사">
+                            <div class="list_hover">
+                                <h3>변신 · 시골의사</h3>
+                                <p>프란츠 카프카</p>
+                            </div><!--list_hover-->
+                        </div><!--swiper-slide-->
+                        <div class="swiper-slide">
+                            <img src="./images/reading_list2.png" alt="참을 수 없는 존재의 가벼움">
+                            <div class="list_hover">
+                                <h3>참을 수 없는<br>
+                                    존재의 가벼움</h3>
+                                <p>밀란 쿤데라</p>
+                            </div><!--list_hover-->
+                        </div> <!--swiper-slide-->
+                        <div class="swiper-slide">
+                            <img src="./images/reading_list3.png" alt="알바생 자르기">
+                            <div class="list_hover">
+                                <h3>알바생 자르기</h3>
+                                <p>장강명</p>
+                            </div><!--list_hover-->
+                        </div> <!--swiper-slide-->
+                        <div class="swiper-slide">
+                            <img src="./images/reading_list4.png" alt="그녀의 눈물 사용법">
+                            <div class="list_hover">
+                                <h3>그녀의 눈물 사용법</h3>
+                                <p>천운영</p>
+                            </div><!--list_hover-->
+                        </div> <!--swiper-slide-->
+                        <div class="swiper-slide">
+                            <img src="./images/reading_list5.png" alt="이토록 평범한 미래">
+                            <div class="list_hover">
+                                <h3>이토록 평범한 미래</h3>
+                                <p>임연수</p>
+                            </div><!--list_hover-->
+                        </div> <!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                </div><!--swiper reading_list-->
+            </div><!--reading_list_inner-->
+            <div class="shelf">
+                <img src="./images/shelf.png" alt="선반이미지">
+            </div><!--shelf-->
+        </div><!--reading_list-->
+
+        <div id="book_program">
+            <h2>북 프로그램</h2>
+            <!--탭 메뉴 영역 -->
+            <ul class="tabs">
+                <li><span data="#progress">진행</span></li>
+                <li><span data="#end">종료</span></li>
+            </ul><!--tabs-->
+
+            <!--탭 콘텐츠 영역 -->
+            <div class="tab_container">
+                <div id="progress" class="tab_content">
+                    <ul class="program">
+                        <li>
+                            <div class="program_img">
+                                <a href="https://kr.freepik.com/free-psd/world-book-day-template-design_38629070.htm"
+                                    target="_blank"><img src="./images/book_program1.jpg" alt="북프로그램1"></a>
+                            </div><!--program_img-->
+                            <div class="program_text">
+                                <p>독서 클럽</p>
+                                <a href="#">
+                                    <h3>부모 자녀가 함께하는 동화 속으로</h3>
+                                </a>
+                                <table>
+                                    <tr>
+                                        <th>접수기간</th>
+                                        <td>2024-08-23 ~ 2024-09-06</td>
+                                        <th>기간(일시)</th>
+                                        <td>2024-09-22</td>
+                                    </tr>
+                                    <tr>
+                                        <th>정원</th>
+                                        <td>16명</td>
+                                        <th>수강료</th>
+                                        <td>12,000원</td>
+                                    </tr>
+                                </table>
+                            </div><!--program_text-->
+                            <div class="program_more">
+                                <a href="#">상세내용보기</a>
+                            </div><!--program_more-->
+                        </li>
+                        <li>
+                            <div class="program_img">
+                                <a href="https://www.freepik.com/free-psd/party-entertainment-facebook-template_137749308.htm"
+                                    target="_blank"><img src="./images/book_program2.jpg" alt="북프로그램2"></a>
+                            </div><!--program_img-->
+                            <div class="program_text">
+                                <p>성인 독서 클럽</p>
+                                <a href="#">
+                                    <h3>인생 취미를 발견하는 딴짓 클럽</h3>
+                                </a>
+                                <table>
+                                    <tr>
+                                        <th>접수기간</th>
+                                        <td>2024-08-23 ~ 2024-09-06</td>
+                                        <th>기간(일시)</th>
+                                        <td>2024-09-21</td>
+                                    </tr>
+                                    <tr>
+                                        <th>정원</th>
+                                        <td>15명</td>
+                                        <th>수강료</th>
+                                        <td>12,000원</td>
+                                    </tr>
+                                </table>
+                            </div><!--program_text-->
+                            <div class="program_more">
+                                <a href="#">상세내용보기</a>
+                            </div><!--program_more-->
+                        </li>
+                    </ul><!--program-->
+                </div><!--progress-->
+
+                <div id="end" class="tab_content">
+                    <ul class="program">
+                        <li>
+                            <div class="program_img">
+                                <a href="https://www.freepik.com/free-psd/flat-design-world-book-day-banner-template_24998054.htm"
+                                    target="_blank"><img src="./images/book_program3.jpg" alt="북프로그램3"></a>
+                            </div><!--program_img-->
+                            <div class="program_text">
+                                <p>작가 팬미팅</p>
+                                <a href="#">
+                                    <h3>소설가 임선우와 함께하는 도란도란 문학 상담소</h3>
+                                </a>
+                                <table>
+                                    <tr>
+                                        <th>접수기간</th>
+                                        <td>2024-07-22 ~ 2024-08-02</td>
+                                        <th>기간(일시)</th>
+                                        <td>2024-08-17</td>
+                                    </tr>
+                                    <tr>
+                                        <th>정원</th>
+                                        <td>35명</td>
+                                        <th>수강료</th>
+                                        <td>25,000원</td>
+                                    </tr>
+                                </table>
+                            </div><!--program_text-->
+                            <div class="program_more">
+                                <a href="#">상세내용보기</a>
+                            </div><!--program_more-->
+                        </li>
+                        <li>
+                            <div class="program_img">
+                                <a href="https://www.freepik.com/free-psd/world-book-day-medium-banner-template_144506655.htm"
+                                    target="_blank"><img src="./images/book_program4.jpg" alt="북프로그램4"></a>
+                            </div><!--program_img-->
+                            <div class="program_text">
+                                <p>인문학 강의</p>
+                                <a href="#">
+                                    <h3>변영주 감독<br> &lt;좋은 문장은 언제나 좋아지려는 세상에 기대어 탄생한다&gt;</h3>
+                                </a>
+                                <table>
+                                    <tr>
+                                        <th>접수기간</th>
+                                        <td>2024-06-17 ~ 2024-06-28</td>
+                                        <th>기간(일시)</th>
+                                        <td>2024-07-13</td>
+                                    </tr>
+                                    <tr>
+                                        <th>정원</th>
+                                        <td>35명</td>
+                                        <th>수강료</th>
+                                        <td>25,000원</td>
+                                    </tr>
+                                </table>
+                            </div><!--program_text-->
+                            <div class="program_more">
+                                <a href="#">상세내용보기</a>
+                            </div><!--program_more-->
+                        </li>
+                    </ul><!--program-->
+                </div><!--end-->
+            </div><!--tab_container-->
+        </div><!--book_program-->
+
+        <footer>
+            <div class="footer_inner">
+                <h2><a href="./index.html"><img src="./images/sub_logo.png" alt="오독오독 서브 로고"></a></h2>
+                <ul class="footer_text">
+                    <li>오독오독 │ 대표: 성채윤 │ 전화번호: 051-555-5555</li>
+                    <li>주소: 부산시 부산진구 동성로5번길 55</li>
+                    <li>Copyright 2024 오독오독 All Rights Reserved.</li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png"
+                                alt="유튜브 아이콘"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/insta.png"
+                                alt="인스타그램 아이콘"></a></li>
+                    <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"
+                            target="_blank"><img src="./images/blog.png" alt="네이버 블로그 아이콘"></a></li>
+                </ul>
+            </div><!--footer_inner-->
+        </footer>
+
+        <!--라이브러리파일-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.6.4.min.js"></script>
+        <script src="./js/sub_menu.js"></script>
+        <script src="./js/book_script.js"></script>
+</body>
+
+</html>

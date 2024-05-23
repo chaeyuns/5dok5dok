@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>오독오독</title>
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/menu_style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_inner">
+            <div class="logo">
+                <h2><a href="./index.html"><img src="./images/main_logo.png" alt="오독오독 메인로고"></a></h2>
+                <ul>
+                    <li><a href="#"><img src="./images/login.png" alt="로그인 이미지"></a></li>
+                    <li><a href="#"><img src="./images/join.png" alt="회원가입 이미지"></a></li>
+                </ul>
+            </div><!--logo-->
+            <ul id="gnb">
+                <li><a href="./about.html">브랜드</a>
+                    <ul class="sub">
+                        <li><a href="./about.html">오독오독 소개</a></li>
+                        <li><a href="./about.html#character">캐릭터 소개</a></li>
+                        <li><a href="./about.html#directions">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="./menu.html">메뉴</a>
+                    <ul class="sub">
+                        <li><a href="./menu.html">커피</a></li>
+                        <li><a href="./menu.html">논커피</a></li>
+                        <li><a href="./menu.html">디저트</a></li>
+                    </ul>
+                </li>
+                <li><a href="book.html">책</a>
+                    <ul class="sub">
+                        <li><a href="book.html#bestseller">베스트셀러</a></li>
+                        <li><a href="book.html#reading_list">추천도서</a></li>
+                        <li><a href="book.html#book_program">북 프로그램</a></li>
+                    </ul>
+                </li>
+                <li><a href="./community.html">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="./community.html">이벤트</a></li>
+                        <li><a href="./community.html">Q&A</a></li>
+                        <li><a href="./community.html">레터</a></li>
+                    </ul>
+                </li>
+                <li class="sub_bg"></li>
+            </ul><!--gnb-->
+        </div><!--header_inner-->
+
+        <div class="menu_banner">
+            <div class="menu_banner_inner">
+                <h1>메뉴</h1>
+                <div class="tab_btn">
+                    <div class="btn1" data="#coffee"><span>커피</span></div>
+                    <div class="btn1" data="#non_coffee"><span>논커피</span></div>
+                    <div class="btn1" data="#dessert"><span>디저트</span></div>
+                    <div class="active"></div>
+                </div><!--tab_btn-->
+            </div><!--menu_banner_inner-->
+        </div><!--menu_banner-->
+
+        <div class="tab_container">
+            <div id="coffee" class="tab_content menu_inner">
+                <ul>
+                    <li>
+                        <div class="menu_hover coffee_hover">
+                            <p>#밤</p>
+                            <img src="./images/coffee_list1.png" alt="밤 라떼">
+                        </div><!--coffee_hover-->
+                        <p>밤 라떼</p>
+                        <img src="./images/new.png" alt="새 메뉴 이미지">
+                    </li>
+                    <li>
+                        <div class="menu_hover coffee_hover">
+                            <p>#밤</p>
+                            <img src="./images/coffee_list2.png" alt="아이스 밤 라떼">
+                        </div><!--coffee_hover-->
+                        <p>아이스 밤 라떼</p>
+                        <img src="./images/new.png" alt="새 메뉴 이미지">
+                    </li>
+                    <li>
+                        <div class="menu_hover coffee_hover">
+                            <p>#카페라떼</p>
+                            <img src="./images/coffee_list3.png" alt="카페라떼">
+                        </div><!--coffee_hover-->
+                        <p>카페라떼</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover coffee_hover">
+                            <p>#콜드브루 라떼</p>
+                            <img src="./images/coffee_list4.png" alt="콜드브루 라떼">
+                        </div><!--coffee_hover-->
+                        <p>콜드브루 라떼</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover coffee_hover">
+                            <p>#곡물</p>
+                            <img src="./images/coffee_list5.png" alt="오곡 라떼">
+                        </div><!--coffee_hover-->
+                        <p>오곡 라떼</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover coffee_hover">
+                            <p>#크림</p>
+                            <img src="./images/coffee_list6.png" alt="아인슈페너">
+                        </div><!--coffee_hover-->
+                        <p>아인슈페너</p>
+                    </li>
+                </ul>
+            </div><!--tab_content menu_inner-->
+
+            <div id="non_coffee" class="tab_content menu_inner">
+                <ul>
+                    <li>
+                        <div class="menu_hover non_coffee_hover">
+                            <p>#초코</p>
+                            <img src="./images/beverage_list1.png" alt="초코라떼">
+                        </div><!--non_coffee_hover-->
+                        <p>초코라떼</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover non_coffee_hover">
+                            <p>#레몬</p>
+                            <img src="./images/beverage_list2.png" alt="레몬에이드">
+                        </div><!--non_coffee_hover-->
+                        <p>레몬에이드</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover non_coffee_hover">
+                            <p>#바나나<br>
+                                #계란과자</p>
+                            <img src="./images/beverage_list3.png" alt="바나나 쉐이크">
+                        </div><!--non_coffee_hover-->
+                        <p>바나나 쉐이크</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover non_coffee_hover">
+                            <p>#딸기 #요거트</p>
+                            <img src="./images/beverage_list4.png" alt="딸기 요거트 스무디">
+                        </div><!--non_coffee_hover-->
+                        <p>딸기 요거트 스무디</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover non_coffee_hover">
+                            <p>#청귤</p>
+                            <img src="./images/beverage_list5.png" alt="청귤주스">
+                        </div><!--non_coffee_hover-->
+                        <p>청귤주스</p>
+                    </li>
+                </ul>
+            </div><!--tab_content menu_inner-->
+
+            <div id="dessert" class="tab_content menu_inner">
+                <ul>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#크림치즈</p>
+                            <img src="./images/dessert_list1.png" alt="레드벨벳 쿠키">
+                        </div><!--dessert_hover-->
+                        <p>레드벨벳 쿠키</p>
+                        <img src="./images/new.png" alt="새 메뉴 이미지">
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#녹차</p>
+                            <img src="./images/dessert_list2.png" alt="녹차 쿠키">
+                        </div><!--dessert_hover-->
+                        <p>녹차 쿠키</p>
+                        <img src="./images/new.png" alt="새 메뉴 이미지">
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#화이트초코</p>
+                            <img src="./images/dessert_list3.png" alt="마카다미아 쿠키">
+                        </div><!--dessert_hover-->
+                        <p>마카다미아 쿠키</p>
+                        <img src="./images/new.png" alt="새 메뉴 이미지">
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#다크초코</p>
+                            <img src="./images/dessert_list4.png" alt="초코 마카다미아 쿠키">
+                        </div><!--dessert_hover-->
+                        <p>초코 마카다미아 쿠키</p>
+                        <img src="./images/new.png" alt="새 메뉴 이미지">
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#초코칩</p>
+                            <img src="./images/dessert_list5.png" alt="초코칩쿠키">
+                        </div><!--dessert_hover-->
+                        <p>초코칩쿠키</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#다크초코</p>
+                            <img src="./images/dessert_list6.png" alt="다크초코쿠키">
+                        </div><!--dessert_hover-->
+                        <p>다크초코쿠키</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#설탕코팅</p>
+                            <img src="./images/dessert_list7.png" alt="글레이즈드 도넛">
+                        </div><!--dessert_hover-->
+                        <p>글레이즈드 도넛</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#오리지널베이글</p>
+                            <img src="./images/dessert_list8.png" alt="오리지널 베이글">
+                        </div><!--dessert_hover-->
+                        <p>오리지널 베이글</p>
+                    </li>
+                    <li>
+                        <div class="menu_hover dessert_hover">
+                            <p>#초코베이글</p>
+                            <img src="./images/dessert_list9.png" alt="초코 베이글">
+                        </div><!--dessert_hover-->
+                        <p>초코 베이글</p>
+                    </li>
+                </ul>
+            </div><!--tab_content menu_inner-->
+        </div><!--tab_container-->
+
+        <footer>
+            <div class="footer_inner">
+                <h2><a href="./index.html"><img src="./images/sub_logo.png" alt="오독오독 서브 로고"></a></h2>
+                <ul class="footer_text">
+                    <li>오독오독 │ 대표: 성채윤 │ 전화번호: 051-555-5555</li>
+                    <li>주소: 부산시 부산진구 동성로5번길 55</li>
+                    <li>Copyright 2024 오독오독 All Rights Reserved.</li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png"
+                                alt="유튜브 아이콘"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/insta.png"
+                                alt="인스타그램 아이콘"></a></li>
+                    <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"
+                            target="_blank"><img src="./images/blog.png" alt="네이버 블로그 아이콘"></a></li>
+                </ul>
+            </div><!--footer_inner-->
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="./js/jquery-3.6.4.min.js"></script>
+        <script src="./js/sub_menu.js"></script>
+        <script src="./js/menu_script.js"></script>
+</body>
+
+</html>
