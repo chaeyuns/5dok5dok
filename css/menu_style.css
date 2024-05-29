@@ -177,7 +177,7 @@ header {
 
 /*menu*/
 .menu_banner {
-    background: url(../images/menu_banner1.gif);
+    background: url(../images/menu_banner1.gif) center top;
 }
 
 .tab_container {

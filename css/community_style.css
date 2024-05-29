@@ -122,7 +122,7 @@ header {
 /*community_banner*/
 .community_banner {
     height: 365px;
-    background: url(../images/community_banner.gif);
+    background: url(../images/community_banner.gif) center top;
 }
 
 .community_banner_inner {
@@ -184,7 +184,7 @@ header {
 #event {
     width: 1320px;
     margin: 0 auto;
-    padding: 140px 115px;
+    padding: 140px 0;
 }
 
 #event ul {
